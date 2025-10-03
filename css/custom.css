@@ -1,0 +1,145 @@
+:root {
+  --contrast-color: #008080;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  /* or Lato / Open Sans */
+  font-weight: 200;
+  /* lighter body text */
+  font-size: 0.95rem;
+  /* slightly smaller */
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+  /* lighter headings */
+}
+
+a {
+  color: inherit;
+  /* same as surrounding text */
+  /* remove underline */
+  text-decoration: underline;
+  transition: color 0.2s ease-in-out;
+  text-decoration-thickness: .75px;
+}
+
+a:hover,
+a:focus {
+  /* color: inherit; */
+  color: var(--contrast-color);
+}
+
+
+/* 21:9 letterbox */
+.hero-slide {
+  aspect-ratio: 21 / 9;
+  background: #000;
+}
+
+.hero-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  opacity: .9;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, .15);
+}
+
+.hero-caption {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 3rem;
+}
+
+.kicker {
+  letter-spacing: .25em;
+  font-weight: 600;
+  opacity: .9;
+}
+
+/* For clicking on publication stats */
+.stat-filter.inactive,
+.year-filter.inactive {
+    color: gray;
+}
+
+.stat-filter.active,
+.year-filter.active {
+    color: black;
+}
+
+.stat-filter.inactive * {
+    color: gray !important;
+}
+
+.stat-filter.active * {
+    color: black !important;
+}
+
+
+/* For the years filter in publications*/
+/* outer: scrolls if too narrow */
+.year-bar {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.year-track {
+  flex-wrap: nowrap !important;    /* never wrap */
+  min-width: max-content;          /* keep on one line */
+}
+
+.year-track > * {
+  flex: 0 0 auto !important;       /* don't shrink; stay in one row */
+  white-space: nowrap;             /* buttons/label never break lines */
+}
+
+.year-filter {
+  border: none;
+  background-color: transparent;
+  color: #555;
+  padding: 0.3rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.year-filter:hover {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+.year-filter.active {
+  background-color: #000;
+  color: #fff;
+}
+
+
+/* Überschreibe Bold in Markdown-Bereichen */
+strong,
+b {
+  font-weight: 700 !important;
+}
+
+.md strong,
+.md b { font-weight: 700 !important; }
+
