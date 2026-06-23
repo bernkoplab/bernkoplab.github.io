@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   fill="#000000"
+   width="900"
+   height="900"
+   viewBox="0 0 27 27"
+   role="img"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="scopus.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.71859727"
+     inkscape:cx="375.73202"
+     inkscape:cy="345.81262"
+     inkscape:window-width="2560"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <title
+     id="title1">Scopus icon</title>
+  <circle
+     style="fill:#000000;fill-opacity:1;stroke-width:0.00379191;stroke-linejoin:round"
+     id="path2"
+     cx="13.5"
+     cy="13.5"
+     r="13.5" />
+  <path
+     d="m 23.793358,19.122533 -0.121647,-1.544044 c -1.239059,0.670795 -2.558926,0.934942 -3.879662,0.934942 -2.883897,0 -5.178676,-2.417295 -5.178676,-5.626162 0,-3.391338 2.254809,-5.4827932 4.894544,-5.4827932 1.665691,0 2.945589,0.2632783 4.163794,0.9340732 L 23.793358,6.8153579 C 22.675946,6.2870635 21.762726,6.0429011 19.711241,6.0429011 c -3.939617,0 -6.925176,3.0672359 -6.925176,6.9660139 0,4.448796 3.553823,6.885206 6.864352,6.885206 1.664823,0 3.046382,-0.223308 4.142941,-0.771588 z M 10.799747,16.116121 c 0,-1.92897 -1.7065301,-2.80222 -3.351368,-3.777132 -1.2798976,-0.771588 -2.6406034,-1.299882 -2.6406034,-2.7214113 0,-1.05572 0.7724569,-2.2139708 2.295648,-2.2139708 1.3198672,0 2.2330868,0.2033238 3.3913374,0.8941036 L 10.596423,6.6928423 C 9.5198494,6.2462249 8.7482614,6.0429011 7.0017616,6.0429011 c -2.4981029,0 -4.021294,1.624853 -4.021294,3.6963234 0,2.0714705 1.827308,2.9655735 3.4929996,3.9804555 1.239059,0.751603 2.5389415,1.259913 2.5389415,2.599765 0,1.299882 -1.1582509,2.233955 -2.5389415,2.233955 -1.3607058,0 -2.2539405,-0.304116 -3.2896757,-0.934073 L 2.939629,19.224195 c 1.0557201,0.486587 2.1322938,0.710765 3.6146464,0.710765 2.0723393,0 4.2446026,-1.279898 4.2446026,-3.818839 z"
+     id="path1"
+     style="fill:#ffffff;fill-opacity:1;stroke-width:0.868905" />
+  <metadata
+     id="metadata2">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Scopus icon</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>
