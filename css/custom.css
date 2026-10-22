@@ -1,0 +1,305 @@
+:root {
+  --contrast-color: #008080;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  /* or Lato / Open Sans */
+  font-weight: 400;
+  /* normal body text - best balance between readability and elegance */
+  font-size: 0.95rem;
+  /* slightly smaller */
+  line-height: 1.6;
+  /* Font rendering improvements */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  /* Maximum width constraint for large screens */
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-weight: 500;
+  /* medium weight for h1 as requested */
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  /* semi-bold headings - changed from 300 for better readability */
+}
+
+/* Override Bootstrap's thin font weights for consistent styling */
+.lead {
+  font-weight: 400 !important;
+  /* Match body text weight */
+}
+
+.fw-light {
+  font-weight: 400 !important;
+  /* Match body text weight */
+}
+
+.fw-lighter {
+  font-weight: 400 !important;
+  /* Match body text weight */
+}
+
+a {
+  color: inherit;
+  /* same as surrounding text */
+  /* remove underline */
+  text-decoration: underline;
+  transition: color 0.2s ease-in-out;
+  text-decoration-thickness: .75px;
+}
+
+a:hover,
+a:focus {
+  /* color: inherit; */
+  color: var(--contrast-color);
+}
+
+
+/* Hero-Karussell mit responsiver Höhe - Bild füllt immer den gesamten Container */
+.hero-slide {
+  position: relative;
+  width: 100%;
+  height: 450px; /* Standard Höhe */
+  background: #000;
+  overflow: hidden;
+}
+
+/* Responsive Höhe für verschiedene Bildschirmgrößen */
+@media (min-width: 1600px) {
+  .hero-slide {
+    height: 550px;
+  }
+}
+
+@media (min-width: 1850px) {
+  /* Ab 1850px: Carousel erhält maximale Breite und wird linksbündig ausgerichtet */
+  #heroCarousel {
+    max-width: 1850px;
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  /* Höhe bleibt konstant bei 550px, wächst nicht mehr */
+  .hero-slide {
+    height: 550px;
+  }
+}
+
+.hero-slide img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Bild füllt den gesamten Container, wird zugeschnitten falls nötig */
+  object-position: center; /* Bild wird mittig zentriert */
+  display: block;
+  opacity: .9;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, .15);
+}
+
+.hero-caption {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 3rem;
+}
+
+.kicker {
+  letter-spacing: .25em;
+  font-weight: 600;
+  opacity: .9;
+}
+
+/* For clicking on publication stats */
+.stat-filter.inactive,
+.year-filter.inactive {
+    color: gray;
+}
+
+.stat-filter.active,
+.year-filter.active {
+    color: black;
+}
+
+.stat-filter.inactive * {
+    color: gray !important;
+}
+
+.stat-filter.active * {
+    color: black !important;
+}
+
+
+/* For the years filter in publications*/
+/* outer: scrolls if too narrow */
+.year-bar {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.year-track {
+  flex-wrap: nowrap !important;    /* never wrap */
+  min-width: max-content;          /* keep on one line */
+}
+
+.year-track > * {
+  flex: 0 0 auto !important;       /* don't shrink; stay in one row */
+  white-space: nowrap;             /* buttons/label never break lines */
+}
+
+.year-filter {
+  border: none;
+  background-color: transparent;
+  color: #555;
+  padding: 0.3rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.year-filter:hover {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+.year-filter.active {
+  background-color: #000;
+  color: #fff;
+}
+
+
+/* Überschreibe Bold in Markdown-Bereichen */
+strong,
+b {
+  font-weight: 700 !important;
+}
+.md strong,
+.md b { font-weight: 700 !important; }
+
+/* Container nutzt gesamte Bildschirmbreite mit Abstand zum Rand */
+.container {
+  max-width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* Auf größeren Bildschirmen mehr Abstand */
+@media (min-width: 1600px) {
+  .container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+/* Navbar-Hintergrund skaliert (außer mittlere Zeile mit Navigation) */
+header .bg-white {
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+
+@media (min-width: 1600px) {
+  header .bg-white {
+    padding-left: 4rem !important;
+    padding-right: 4rem !important;
+  }
+}
+
+/* ABER: Die mittlere Navbar-Zeile mit den Navigation-Links bleibt bei 2rem */
+header div.bg-white:not(.container) {
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+
+@media (min-width: 1600px) {
+  header div.bg-white:not(.container) {
+    padding-left: 4rem !important;
+    padding-right: 4rem !important;
+  }
+}
+
+/* Verschachtelte Container in der Navbar sollen KEIN extra Padding haben */
+header .container .container {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  max-width: none !important;
+}
+
+/* Obere Navbar-Linie: border-bottom entfernen und mit ::after neu zeichnen */
+header .bg-white.container.border-bottom {
+  border-bottom: none !important;
+  position: relative;
+}
+
+header .bg-white.container.border-bottom::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 2rem;
+  right: 2rem;
+  height: 1px;
+  background-color: #dee2e6; /* Bootstrap's default border color */
+}
+
+@media (min-width: 1600px) {
+  header .bg-white.container.border-bottom::after {
+    left: 4rem;  /* Skaliert mit Logo-Zeile auf 4rem */
+    right: 4rem;
+  }
+}
+
+/* Untere border-bottom Linie: kein Padding, border geht über volle Container-Breite
+   (die bereits durch das äußere .bg-white Element bei 2rem beginnt) */
+header .container.border-bottom:not(.bg-white) {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* Research grid: Ab 1650px Viewport nicht mehr breiter werden */
+@media (min-width: 1650px) {
+  .research-grid {
+    max-width: 1522px; /* 1650px - 128px (4rem padding links + rechts) */
+    margin-left: 0;
+    margin-right: auto;
+  }
+}
+
+/* Footer: Hintergrund über gesamte Bildschirmbreite, unabhängig von body max-width */
+footer {
+  position: relative;
+  z-index: 1;
+}
+
+/* Pseudo-Element für vollbreiten Hintergrund */
+footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: calc(-50vw + 50%);
+  width: 100vw;
+  height: 100%;
+  background-color: #f8f9fa; /* bg-light Farbe */
+  z-index: -1;
+}
